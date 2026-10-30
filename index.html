@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Enhelo</title>
+  <meta name="description" content="Sitio web de Enhelo">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <nav>
+      <span class="logo">enhelo</span>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="hero-text">
+      <h1>Bienvenido a Enhelo</h1>
+      <p>Un espacio en construcción. Pronto habrá más contenido por aquí.</p>
+      <a class="btn" href="#proyectos">Ver proyectos</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="sobre">
+      <h2>Sobre</h2>
+      <p>
+        Este es un texto de relleno. Aquí puedes contar de qué trata el sitio,
+        quién está detrás y qué tipo de contenido vas a publicar.
+      </p>
+    </section>
+
+    <section id="proyectos">
+      <h2>Proyectos</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Proyecto uno</h3>
+          <p>Descripción breve del primer proyecto.</p>
+        </article>
+        <article class="card">
+          <h3>Proyecto dos</h3>
+          <p>Descripción breve del segundo proyecto.</p>
+        </article>
+        <article class="card">
+          <h3>Proyecto tres</h3>
+          <p>Descripción breve del tercer proyecto.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>Escríbeme a <a href="mailto:hola@enhelo.xyz">hola@enhelo.xyz</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Enhelo</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
